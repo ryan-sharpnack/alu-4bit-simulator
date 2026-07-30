@@ -3,6 +3,8 @@
 ## Technical Objective
 A pure C simulation that replicates a physical 4-bit Arithmetic Logic Unit (ALU) using software-defined logic gates and bitwise operations. The simulator computes results and reports the same status flags a real CPU would set after each operation.
 
+**Business Impact Summary:** Unverified arithmetic logic at the hardware level is a common root cause of both safety failures and exploitable vulnerabilities — overflow and carry-handling bugs have caused everything from crashed spacecraft to bypassed authentication checks in production systems. This project demonstrates the bit-level auditing skillset needed to catch these flaws before deployment, which for an organization means fewer undetected logic errors reaching production, lower incident-response costs, and stronger assurance when evaluating firmware or legacy code inherited through M&A or vendor relationships.
+
 ## The "Why": Engineering Value & Threat Impact
 *   **Operational Risk / Threat Model:** Hardware-level understanding is critical; malicious actors can exploit microarchitectural flaws or side-channels (like Meltdown/Spectre) if software engineers treat physical processors as black boxes.
 *   **Engineering Mastery:** Proves absolute control over bitwise manipulation, boolean algebra, and the mechanical transition from software commands to electrical-equivalent logic (AND, OR, NOT, XOR) without relying on high-level mathematical operators.
